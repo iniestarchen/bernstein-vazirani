@@ -1,0 +1,32 @@
+{
+  "id": "bernstein-vazirani",
+  "name": "Bernstein-Vazirani Algorithm",
+  "category": "search",
+  "description": "Recover a hidden binary string s='101' from f(x) = s\u00b7x (mod 2) in a single oracle query.",
+  "long_description": "The Bernstein-Vazirani algorithm recovers a secret string s \u2208 {0,1}^n by evaluating f(x) = s\u00b7x (mod 2) exactly once, while the best classical algorithm requires n queries. The circuit is structurally identical to Deutsch-Jozsa, but the oracle is a CX on each bit position where s[i]=1. After the Hadamard at the output, measuring gives s exactly.",
+  "difficulty": "beginner",
+  "qubit_count": 4,
+  "clbit_count": 3,
+  "gate_count": 8,
+  "depth": 5,
+  "tags": [
+    "bernstein-vazirani",
+    "oracle",
+    "hidden-string",
+    "linear-speedup"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "c[0]=1, c[1]=0, c[2]=1 (secret string '101')",
+  "references": [
+    {
+      "title": "Bernstein & Vazirani (1997). Quantum Complexity Theory. SIAM J. Comput. 26(5)",
+      "url": "https://doi.org/10.1137/S0097539796300921"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
