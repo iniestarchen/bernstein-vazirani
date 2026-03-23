@@ -1,0 +1,28 @@
+{
+  "slug": "bernstein-vazirani",
+  "name": "Bernstein-Vazirani Algorithm",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "Recover a hidden binary string s=101 from f(x) = s*x (mod 2) in a single query.",
+  "industries": [
+    "education"
+  ],
+  "techniques": [
+    "gate"
+  ],
+  "difficulty": "beginner",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "bernstein-vazirani",
+    "oracle",
+    "hidden-string"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1993
+  }
+}
